@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ImageGalleryItem from './ImageGalleryItem';
-import s from './Gallery.module.css';
+import css from './Gallery.module.css';
 
 export default function ImageGallery({ images, openModal }) {
   return (
-    <ul className={s.gallery}>
+    <ul className={css.gallery}>
       {images.map(({ id, webformatURL }) => (
         <ImageGalleryItem
           key={id}
