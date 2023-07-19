@@ -20,8 +20,8 @@ export default class Modal extends Component {
     }
   };
 
-  handleBackdropClick = event => {
-    if (event.currentTarget === event.target) {
+  handleBackdropClick = evt => {
+    if (evt.currentTarget === evt.target) {
       this.props.onClose();
     }
   };
